@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT EDITOR</title>
+    <link rel="stylesheet" href="./text.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="heading">TEXT EDITOR</div>
+        <div class="toolbar">
+          <button onclick="format('bold')">Bold</button>
+          <button onclick="format('italic')">Italic</button>
+          <button onclick="format('underline')">Underline</button>
+          <button onclick="format('strikeThrough')">Strikethrough</button>
+          <button onclick="format('insertUnorderedList')">Bullet List</button>
+          <button onclick="format('insertOrderedList')">Numbered List</button>
+          <button onclick="format('createLink')">Insert Link</button>
+          <button onclick="format('unlink')">Remove Link</button>
+          <button onclick="format('justifyLeft')">Left Align</button>
+          <button onclick="format('justifyCenter')">Center Align</button>
+          <button onclick="format('justifyRight')">Right Align</button>
+          <button onclick="format('justifyFull')">Justify</button>
+        </div>
+        <div class="content" contenteditable="true">
+          Start writing your blog here...
+        </div>
+      </div>
+  <script src="./text.js"></script>
+</body>
+</html>
